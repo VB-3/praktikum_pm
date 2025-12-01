@@ -63,14 +63,14 @@ class ProfileScreen extends StatelessWidget{
                       child: Image.asset('assets/images/pp.png'),
                     ),
                     Text(
-                      'Samuel Gautama Manik',
+                      'Elvan Yohanes Gultom',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600
                       ),
                     ),
                     Text(
-                      'samuelgautama@student.usu.ac.id',
+                      'elvangultom@student.usu.ac.id',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,

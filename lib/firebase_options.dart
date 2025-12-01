@@ -50,20 +50,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCMBcjIZHWXF7mJ1iEC6UwZGfjhsRzosvA',
-    appId: '1:1047673872256:android:8eb06b07eb7105e1deab65',
-    messagingSenderId: '1047673872256',
-    projectId: 'praktikum-pm-b',
-    storageBucket: 'praktikum-pm-b.firebasestorage.app',
+    apiKey: 'AIzaSyACNpr45tXXr8SzyUV9wcr314Zx3GScNCI',
+    appId: '1:348488256138:android:3f7087ffc96fb9a7dcbb73',
+    messagingSenderId: '348488256138',
+    projectId: 'prakpm-51b2f',
+    storageBucket: 'prakpm-51b2f.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAXQP1l_-TszyXllA-rNCYRLTCs1U7kbc0',
-    appId: '1:1047673872256:ios:ab47caf1d7debdd3deab65',
-    messagingSenderId: '1047673872256',
-    projectId: 'praktikum-pm-b',
-    storageBucket: 'praktikum-pm-b.firebasestorage.app',
-    iosClientId: '1047673872256-ivmgs7b9r88gl0njulutfcvgal2rnqal.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB4O9MQP8jDvyQc2MhWqkHCbWVUW2k_AS0',
+    appId: '1:348488256138:ios:245291d218f3e27adcbb73',
+    messagingSenderId: '348488256138',
+    projectId: 'prakpm-51b2f',
+    storageBucket: 'prakpm-51b2f.firebasestorage.app',
+    androidClientId: '348488256138-n26974np0pll4j8qq2pao8ollvvepi29.apps.googleusercontent.com',
+    iosClientId: '348488256138-q8ueots4ufa3i6jh1b1emc9sq4448c7v.apps.googleusercontent.com',
     iosBundleId: 'com.example.myFirstFlutterApp',
   );
 

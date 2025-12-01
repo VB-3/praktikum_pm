@@ -1,33 +1,70 @@
 {
   "project_info": {
-    "project_number": "1047673872256",
-    "project_id": "praktikum-pm-b",
-    "storage_bucket": "praktikum-pm-b.firebasestorage.app"
+    "project_number": "348488256138",
+    "project_id": "prakpm-51b2f",
+    "storage_bucket": "prakpm-51b2f.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1047673872256:android:8eb06b07eb7105e1deab65",
+        "mobilesdk_app_id": "1:348488256138:android:3f7087ffc96fb9a7dcbb73",
         "android_client_info": {
           "package_name": "com.example.my_first_flutter_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1047673872256-ilm95padurlt95o93iakqir666lvsomm.apps.googleusercontent.com",
+          "client_id": "348488256138-3thkhbh2bjn124lv55nv6t5jtlis7id0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCMBcjIZHWXF7mJ1iEC6UwZGfjhsRzosvA"
+          "current_key": "AIzaSyACNpr45tXXr8SzyUV9wcr314Zx3GScNCI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1047673872256-ilm95padurlt95o93iakqir666lvsomm.apps.googleusercontent.com",
+              "client_id": "348488256138-3thkhbh2bjn124lv55nv6t5jtlis7id0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348488256138:android:d5f25477075c626ddcbb73",
+        "android_client_info": {
+          "package_name": "com.example.prak_pm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348488256138-n26974np0pll4j8qq2pao8ollvvepi29.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prak_pm",
+            "certificate_hash": "702df77a42543b920378fd782f7f201bac4404ba"
+          }
+        },
+        {
+          "client_id": "348488256138-3thkhbh2bjn124lv55nv6t5jtlis7id0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACNpr45tXXr8SzyUV9wcr314Zx3GScNCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348488256138-3thkhbh2bjn124lv55nv6t5jtlis7id0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
