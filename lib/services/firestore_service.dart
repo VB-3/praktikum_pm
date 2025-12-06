@@ -1,4 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+<<<<<<< HEAD
+=======
+// import 'package:cloud_firestore/cloud_firestore.dart'
+>>>>>>> 874d1fa1464c490b20a4e405e6c7a506e150a26a
 
 // Kita buat Model objek untuk data dari Firestore
 class Item {
@@ -7,7 +11,15 @@ class Item {
   final int point;
 
   // Constructor
+<<<<<<< HEAD
   Item({required this.id, required this.name, required this.point});
+=======
+  Item({
+    required this.id,
+    required this.name,
+    required this.point
+  });
+>>>>>>> 874d1fa1464c490b20a4e405e6c7a506e150a26a
 
   // Factory constructor untuk mengkonversi DocumentSnapshot menjadi objek Item
   factory Item.fromFirestore(DocumentSnapshot doc) {
@@ -19,9 +31,15 @@ class Item {
     }
 
     return Item(
+<<<<<<< HEAD
       id: doc.id,
       name: data['name'] as String? ?? "No Name",
       point: (data['point'] as num?)?.toInt() ?? 0,
+=======
+        id: doc.id,
+        name: data['name'] as String? ?? "No Name",
+        point: (data['point'] as num?)?.toInt() ?? 0
+>>>>>>> 874d1fa1464c490b20a4e405e6c7a506e150a26a
     );
   }
 }
@@ -37,6 +55,7 @@ class FirestoreService {
   // Setiap kali data di Firestore berubah, Stream akan otomatis mengirimkan data baru.
   Stream<List<Item>> getItems() {
     // 1. Akses koleksi 'user_items'
+<<<<<<< HEAD
     return _db
         .collection('user_items')
         // 2. Fungsi ajaib untuk mengambil data secara real-time
@@ -46,6 +65,15 @@ class FirestoreService {
           (snapshots) =>
               snapshots.docs.map((doc) => Item.fromFirestore(doc)).toList(),
         );
+=======
+    return _db.collection('user_items')
+    // 2. Fungsi ajaib untuk mengambil data secara real-time
+        .snapshots()
+    // 3. Konversi snapshot menjadi List<Item>
+        .map((snapshots) =>
+        snapshots.docs.map((doc) => Item.fromFirestore(doc)).toList()
+    );
+>>>>>>> 874d1fa1464c490b20a4e405e6c7a506e150a26a
   }
 
   // ====================================================================
@@ -53,14 +81,19 @@ class FirestoreService {
   // ====================================================================
   // Menggunakan Future karena operasi ini butuh waktu (Asynchronous).
   // Kita tidak perlu membuat ID manual, Firestore akan membuatnya otomatis.
+<<<<<<< HEAD
   Future<DocumentReference<Map<String, dynamic>>> addItem(
     String name,
     int point,
   ) {
+=======
+  Future<DocumentReference<Map<String, dynamic>>> addItem(String name, int point) {
+>>>>>>> 874d1fa1464c490b20a4e405e6c7a506e150a26a
     // 1. Akses koleksi 'user_items'
     return _db.collection('user_items')
     // 2. Panggil fungsi .add() untuk menambahkan dokumen baru
     // Firestore akan otomatis meng-generate Random ID yang unik.
+<<<<<<< HEAD
     .add({'name': name, 'point': point});
   }
 
@@ -74,4 +107,11 @@ class FirestoreService {
   Future<void> deleteItem(String id) {
     return _db.collection('user_items').doc(id).delete();
   }
+=======
+        .add({
+      'name': name,
+      'point': point
+    });
+  }
+>>>>>>> 874d1fa1464c490b20a4e405e6c7a506e150a26a
 }
